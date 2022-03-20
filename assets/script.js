@@ -1,18 +1,3 @@
-function rectToPolar(div, x, y) {
-    let vect = {
-        x: [0, x],
-        y: [0, y],
-        type: 'scatter',
-        name: ""
-    }
-    let layout = {
-        title: "Rectangular Coordinates to Polar Coordinates",
-        yaxis: { title: "Y axis" }
-    }
-    Plotly.newPlot(div, [vect], layout)
-}
-
-// rectToPolar('plt', 3, 4)
 
 
 
@@ -30,7 +15,7 @@ class Card {
 
 
 var cardlist = [
-    new Card("test title", "watermelons", 'backup')
+    new Card("Rectangular To Polar Coordinates", "تحويل الاحداثيات الكارتيزينيةالى وحدات متجهة", 'rectToPolar')
 ];
 
 
