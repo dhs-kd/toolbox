@@ -22,3 +22,17 @@
     margin-top:3%;
     box-shadow: 10px 10px 20px 15px gray;
 }
+
+#inner-window {
+    width: 96%;
+    height: 90%;
+    display: block;
+    position: relative;
+    margin-left: 2%;
+    margin-right: 3%;
+    margin-top: 2%;
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #0D6EFD;
+    border-radius: 10px;
+}
