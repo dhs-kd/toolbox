@@ -58,10 +58,36 @@ h2 {
     width: 20%;
     background-color: whitesmoke;
     border-style: dashed;
-    border-color: #0D6EFD;
+    border-color: rgb(78, 78, 78);
     border-width: 2px;
 }
 
 #card-container {
     margin-top: 3%;
+}
+
+#input{
+    width: 55%;
+    height: 70%;
+    display: block;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 2%;
+    border-style: dashed;
+    border-color: rgb(78, 78, 78);
+    border-width: 3px;
+    border-radius: 10px;
+}
+
+#output {
+    width: 35%;
+    height: 70%;
+    display: block;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 62%;
+    border-style: dashed;
+    border-color: rgb(78, 78, 78);
+    border-width: 3px;
+    border-radius: 10px; 
 }
