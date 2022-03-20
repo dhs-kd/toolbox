@@ -1,0 +1,24 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+#left-bar-headline {
+    color:white;
+    text-align: center;
+    display: block;
+}
+
+#headline-sub {
+    text-align: center;
+    justify-content: center;
+}
+
+#main-window {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    display: block;
+    background-color:whitesmoke;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:3%;
+    box-shadow: 10px 10px 20px 15px gray;
+}
