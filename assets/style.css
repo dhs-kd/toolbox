@@ -53,3 +53,15 @@ h2 {
     direction: rtl;
     color: rgb(78, 78, 78);
 }
+
+.card {
+    width: 20%;
+    background-color: whitesmoke;
+    border-style: dashed;
+    border-color: #0D6EFD;
+    border-width: 2px;
+}
+
+#card-container {
+    margin-top: 3%;
+}
