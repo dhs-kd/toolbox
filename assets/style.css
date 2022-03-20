@@ -1,4 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
 
 #left-bar-headline {
     color:white;
@@ -35,4 +37,19 @@
     border-style: dashed;
     border-color: #0D6EFD;
     border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    direction: rtl;
+    font-family: "Reem Kufi";
+    margin-top: 3%;
+    font-size: 300%;
+}
+
+h2 {
+    font-family: "Harmattan";
+    text-align: center;
+    direction: rtl;
+    color: rgb(78, 78, 78);
 }
