@@ -15,7 +15,7 @@ class Card {
 
 
 var cardlist = [
-    new Card("Rectangular To Polar Coordinates", "تحويل الاحداثيات الكارتيزينيةالى وحدات متجهة", 'rectToPolar')
+    new Card("Rectangular To Polar Coordinates", "تحويل الاحداثيات الكارتيزينيةالى احداثيات قطبية", 'rectToPolar')
 ];
 
 

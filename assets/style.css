@@ -91,3 +91,36 @@ h2 {
     border-width: 3px;
     border-radius: 10px; 
 }
+#output-plot {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+form button {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgb(78, 78, 78);
+    color: white;
+    border:none;
+}
+
+form {
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 8%;
+    font-family: "Reem Kufi";
+}
+
+hr {
+    border-top: 3px solid rgb(78, 78, 78);
+}
+
+#info {
+    margin-left: 2%;
+    font-family: "Harmattan";
+    font-size: larger;
+}

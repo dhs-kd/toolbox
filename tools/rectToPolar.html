@@ -62,10 +62,16 @@
                     <td id="input">
 
                         <form id="form">
-
+                            <span id="xform">X value </span> <br><br>
+                            <span id="yform">Y value </span> <br><br><br>
                         </form>
+                        <hr>
+
+                        <div id="info"></div>
                     </td>
-                    <td id="output"></td>
+                    <td id="output">
+                        <div id="output-plot"></div>
+                    </td>
                 </tr>
             </table>
 
@@ -75,14 +81,16 @@
     <script>
 
         function rectToPolar(x, y) {
+            x = x.value
+            y = y.value
             let r = Math.sqrt(x ** 2 + y ** 2)
-            let tan = y / x
+            let tan = y/x
             let sin = y / r
             let cos = x / r
             let angle = Math.round(Math.atan(tan) * 57.2958, 1)
             let vect = {
-                x: [0, x.value],
-                y: [0, y.value],
+                x: [0, x],
+                y: [0, y],
                 type: 'scatter',
                 name: ""
             }
@@ -90,16 +98,25 @@
                 title: "Rectangular Coordinates to Polar Coordinates",
                 yaxis: { title: "Y axis" }
             }
-            Plotly.newPlot('output', [vect], layout)
+            Plotly.newPlot('output-plot', [vect], layout)
+            
+            let info = document.getElementById('info')
+            let elem = document.createElement('span')
+            elem.innerHTML = "Length = " + r + "<br>Angle = " + angle + "<br>Sin = " + sin + "<br>Cos = "+ cos+ "<br>Tan = "+tan
+
+            info.appendChild(elem)
 
         }
 
         var formArea = document.getElementById('form')
+        var xlabel = document.getElementById('xform')
+        var ylabel = document.getElementById('yform')
         var x = document.createElement('input')
         var y = document.createElement('input')
         var btn = document.createElement('button')
-        formArea.appendChild(x)
-        formArea.appendChild(y)
+        btn.innerText="Convert"
+        xlabel.appendChild(x)
+        ylabel.appendChild(y)
         formArea.appendChild(btn).type = 'button'
         btn.onclick = function () {
             rectToPolar(x, y)
