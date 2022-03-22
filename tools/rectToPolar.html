@@ -101,6 +101,9 @@
             Plotly.newPlot('output-plot', [vect], layout)
             
             let info = document.getElementById('info')
+            for (let child of info.childNodes) {
+                info.removeChild(child)
+            }
             let elem = document.createElement('span')
             elem.innerHTML = "Length = " + r + "<br>Angle = " + angle + "<br>Sin = " + sin + "<br>Cos = "+ cos+ "<br>Tan = "+tan
 
