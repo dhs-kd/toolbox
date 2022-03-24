@@ -124,7 +124,7 @@ hr {
     font-size: larger;
 }
 
-.img {
+#img {
     width: 90%;
     height: 90%;
 }
@@ -135,8 +135,3 @@ hr {
     margin-top: 10%;
 }
 
-.imgContainer:hover .img {
-    transform: rotate(-180deg);
-    transition-duration: 5s;
-
-}
