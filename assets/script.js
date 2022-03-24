@@ -15,14 +15,14 @@ class Card {
 
 
 var cardlist = [
-    new Card("Rectangular To Polar Coordinates", "تحويل الاحداثيات الكارتيزينيةالى احداثيات قطبية", 'rectToPolar')
+    new Card("Rectangular To Polar Coordinates", "تحويل الاحداثيات الكارتيزينيةالى احداثيات قطبية", 'rectToPolar'),
+    new Card('Polar to Rectangular Coordinates', 'تحويل الاحداثيات القطبية الى احداثيات كارتيزينية', 'polarToRect')
 ];
 
 
 for (let card of cardlist) {
-    let mycard = document.createElement('div')
-    mycard.innerHTML= `
-    <div class="col">
+    cardDiv.innerHTML+= `
+    <div class="col-md">
         <div class="card text-center">
             <div class="card-body">
                 <h5 class="card-title">${card.title}</h5>
@@ -32,5 +32,5 @@ for (let card of cardlist) {
         </div>
     </div>
     `
-    cardDiv.appendChild(mycard)
+
 }
