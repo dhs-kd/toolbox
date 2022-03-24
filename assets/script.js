@@ -1,7 +1,7 @@
 
 
 
-const cardDiv = document.getElementById("card-container-row");
+const cardDiv = document.getElementById("card-container");
 
 
 class Card {
@@ -20,9 +20,12 @@ var cardlist = [
     new Card('Circular Motion Simulation', 'محاكاة واقعية للحركة الدائرية', 'circularMotion')
 ];
 
-
+let row = document.createElement('div')
+row.className = 'row'
+cardDiv.appendChild(row)
+let i = 0
 for (let card of cardlist) {
-    cardDiv.innerHTML+= `
+    row.innerHTML+= `
     <div class="col-md">
         <div class="card text-center">
             <div class="card-body">
@@ -33,5 +36,11 @@ for (let card of cardlist) {
         </div>
     </div>
     `
-
+    i+=1
+    if (i == 3) {
+        i = 0
+        row = document.createElement('div')
+        row.classList[0] = 'row'
+        cardDiv.appendChild(row)
+    }
 }
