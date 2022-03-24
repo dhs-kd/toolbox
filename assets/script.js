@@ -15,7 +15,7 @@ class Card {
 
 
 var cardlist = [
-    new Card("Rectangular To Polar Coordinates", "تحويل الاحداثيات الكارتيزينيةالى احداثيات قطبية", 'rectToPolar'),
+    new Card("Rectangular To Polar Coordinates", "تحويل الاحداثيات الكارتيزينية الى احداثيات قطبية", 'rectToPolar'),
     new Card('Polar to Rectangular Coordinates', 'تحويل الاحداثيات القطبية الى احداثيات كارتيزينية', 'polarToRect'),
     new Card('Circular Motion Simulation', 'محاكاة واقعية للحركة الدائرية', 'circularMotion')
 ];
