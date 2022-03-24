@@ -123,3 +123,19 @@ hr {
     font-family: "Harmattan";
     font-size: larger;
 }
+
+.img {
+    width: 90%;
+    height: 90%;
+    transition-duration: 5s;
+}
+
+.imgContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+}
+
+.imgContainer:hover .img {
+    transform: rotate(-180deg);
+}
