@@ -83,8 +83,8 @@
         function CircularMotion(time, speed) {
             time = time.value
             speed = speed.value
-            let speedByRev = (speed / 2) * Math.PI;
-            let angle = time * speedByRev * 360
+            let speedByRev = speed / (2 * Math.PI);
+            let angle = time * speedByRev *360
             circle.style = `
         transition-duration: ${time}s; transform: rotate(-${angle}deg);`
         let info = document.getElementById('info')

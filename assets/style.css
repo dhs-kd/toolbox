@@ -149,3 +149,12 @@ iframe {
 #inner-window .row {
     margin-bottom: 2%;
 }
+
+#desc {
+  direction: rtl;
+}
+
+#output .row .col {
+  font-family: "Reem Kufi";
+  margin-top: 1%;
+}
