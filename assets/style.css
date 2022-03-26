@@ -143,6 +143,6 @@ iframe {
   margin-bottom: 2%;
 }
 
-.row {
-    margin-bottom: 3%;
+#inner-window .row {
+    margin-bottom: 2%;
 }
