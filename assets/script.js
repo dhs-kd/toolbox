@@ -17,7 +17,8 @@ class Card {
 var cardlist = [
     new Card("Rectangular To Polar Coordinates", "تحويل الاحداثيات الكارتيزينية الى احداثيات قطبية", 'rectToPolar'),
     new Card('Polar to Rectangular Coordinates', 'تحويل الاحداثيات القطبية الى احداثيات كارتيزينية', 'polarToRect'),
-    new Card('Circular Motion Simulation', 'محاكاة واقعية للحركة الدائرية', 'circularMotion')
+    new Card('Circular Motion Simulation', 'محاكاة واقعية للحركة الدائرية', 'circularMotion'),
+    new Card('Solar System Simulation', 'محاكاة واقعية لحركة الكواكب في المجموعة الشمسية', 'solar')
 ];
 
 let row = document.createElement('div')
