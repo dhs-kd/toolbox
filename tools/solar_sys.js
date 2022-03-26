@@ -1,7 +1,7 @@
 var G = 0.1;
 var dt = 3;
 var heavenly_bodies = []
-var n = 4
+var n = 6
 
 
 function planet(x,y,d,m){
@@ -56,21 +56,33 @@ function setup(){
     createCanvas(Width , Height)
     background(0)
 
-    heavenly_bodies[0] = new planet(Width/2 ,Height/2, 20 , 1600)
-    heavenly_bodies[0].col = '#ffc300'
+    heavenly_bodies[0]=new planet(Width/2,Height/2,33,1600);
+	heavenly_bodies[0].col="#ffc300";
+  
+	heavenly_bodies[1]=new planet(Width/2-280,Height/2,12,.005);
+	heavenly_bodies[1].col="#9c2e35";
+  
+	heavenly_bodies[2]=new planet(Width/2-220,Height/2,14,.002);
+	heavenly_bodies[2].col="#709dd8";
+  
+	heavenly_bodies[3]=new planet(Width/2-100,Height/2,10,.0005);
+	heavenly_bodies[3].col="#78878c";
+  
+    heavenly_bodies[4]= new planet(Width/2-150 ,Height/2 ,11,.004);
+    heavenly_bodies[4].col = '#ffc649';
+  
+    heavenly_bodies[5]= new planet(Width/2-365 ,Height/2 ,20 ,.05)
+    heavenly_bodies[5].col ='#c46200'
+  
+    
 
-    heavenly_bodies[1] = new planet(Width/2 - 330 ,Height/2, 6 , 0.005)
-    heavenly_bodies[1].col = '#709dd8'
 
-    heavenly_bodies[2] = new planet(Width/2 - 220 ,Height/2, 5 , 0.002)
-    heavenly_bodies[2].col = '#e0c870'
+	heavenly_bodies[1].vy=.64;
+	heavenly_bodies[2].vy=.8;
+	heavenly_bodies[3].vy=1.2;
+    heavenly_bodies[4].vy = 1;
+    heavenly_bodies[5].vy=.5;
 
-    heavenly_bodies[3] = new planet(Width/2 - 100 ,Height/2, 3 , 0.0005)
-    heavenly_bodies[3].col = '#78878c'
-
-    heavenly_bodies[1].vy = 0.64
-    heavenly_bodies[2].vy = 0.8
-    heavenly_bodies[3].vy = 1.2
 }
 
 
